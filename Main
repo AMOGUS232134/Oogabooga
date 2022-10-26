@@ -31,13 +31,13 @@ game:GetService("RunService").RenderStepped:Connect(function()
 end)
 
 UIS.InputBegan:Connect(function(inp)
-    if inp.UserInputType == Enum.UserInputType.MouseButton2 then
+    if inp.UserInputType == Enum.KeyCode.E then
         aim = true
     end
 end)
 
 UIS.InputEnded:Connect(function(inp)
-    if inp.UserInputType == Enum.UserInputType.MouseButton2 then
+    if inp.UserInputType == Enum.KeyCode.E then
         aim = false
     end
 end)
